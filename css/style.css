@@ -1,0 +1,355 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:before,
+*:after {
+    content: " ";
+}
+
+body,
+html {
+    background-color: #f0ffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    min-width: 320px;
+    max-width: 960px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+label {
+    color: #000000;
+}
+
+.landing-page {
+    width: 100%;
+    height: 100vh;
+    min-width: 320px;
+    min-height: 480px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -45%);
+    -moz-transform: translate(-50%, -45%);
+    -ms-transform: translate(-50%, -45%);
+    -o-transform: translate(-50%, -45%);
+    transform: translate(-50%, -45%);
+}
+
+.naan {
+    width: 160px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -54%);
+    -moz-transform: translate(-50%, -54%);
+    -ms-transform: translate(-50%, -54%);
+    -o-transform: translate(-50%, -54%);
+    transform: translate(-50%, -54%);
+}
+
+.order {
+    width: 140px;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 50%);
+    -moz-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    -o-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+}
+
+.order a h1 {
+    font-weight: lighter;
+    margin-bottom: 0.5rem;
+    -webkit-animation: order 1.5s infinite;
+    -moz-animation: order 1.5s infinite;
+    -o-animation: order 1.5s infinite;
+    animation: order 1.5s infinite;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+}
+
+@-webkit-keyframes order {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+    50% {
+        -webkit-transform: translateY(20%);
+        transform: translateY(20%);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+}
+
+@-moz-keyframes order {
+    0% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+        -moz-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+    50% {
+        -moz-transform: translateY(20%);
+        transform: translateY(20%);
+        -moz-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+    100% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+        -moz-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+}
+
+@-o-keyframes order {
+    0% {
+        -o-transform: translateY(0);
+        transform: translateY(0);
+        -o-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+    50% {
+        -o-transform: translateY(20%);
+        transform: translateY(20%);
+        -o-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+    100% {
+        -o-transform: translateY(0);
+        transform: translateY(0);
+        -o-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+}
+
+@keyframes order {
+    0% {
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transition-timing-function: ease-in;
+        -moz-transition-timing-function: ease-in;
+        -o-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+    50% {
+        -webkit-transform: translateY(20%);
+        -moz-transform: translateY(20%);
+        -o-transform: translateY(20%);
+        transform: translateY(20%);
+        -webkit-transition-timing-function: ease-in;
+        -moz-transition-timing-function: ease-in;
+        -o-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transition-timing-function: ease-in;
+        -moz-transition-timing-function: ease-in;
+        -o-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+}
+
+.order a img {
+    width: 50px;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 640px;
+    margin: auto;
+    padding: 1rem;
+}
+
+form {
+    width: 100%;
+    display: block;
+}
+
+form input,
+form label {
+    display: inline-block;
+}
+
+form label {
+    font-weight: lighter;
+    font-size: 1.6rem;
+}
+
+form input[type="checkbox"] {
+    display: none;
+}
+
+form input[type="text"],
+form textarea {
+    padding: 0.6rem;
+    outline: 0;
+    border: 1px solid #be1e2d;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    border-radius: 0.2rem;
+    width: 240px;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 1.6rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.checkbox-label {
+    position: relative;
+    display: inline-block;
+}
+
+.checkbox-label:hover {
+    cursor: pointer;
+}
+
+form input[type="checkbox"] ~ .checkbox-label:before {
+    content: url(../img/checkboxes-01.svg);
+    width: 1.3rem;
+    height: 1.3rem;
+    display: inline-block;
+    margin-right: 1rem;
+    -webkit-transform: translate(0, 0.1rem);
+    -moz-transform: translate(0, 0.1rem);
+    -ms-transform: translate(0, 0.1rem);
+    -o-transform: translate(0, 0.1rem);
+    transform: translate(0, 0.1rem);
+}
+
+form input[type="checkbox"]:checked ~ .checkbox-label:before {
+    content: url(../img/checkboxes-02.svg);
+    width: 1.3rem;
+    height: 1.3rem;
+    display: inline-block;
+    margin-right: 1rem;
+    -webkit-transform: translate(0, 0.1rem);
+    -moz-transform: translate(0, 0.1rem);
+    -ms-transform: translate(0, 0.1rem);
+    -o-transform: translate(0, 0.1rem);
+    transform: translate(0, 0.1rem);
+}
+
+form input[type="checkbox"]:checked ~ * {
+    display: inherit;
+}
+
+form input[type="checkbox"]:checked ~ .hidden {
+    margin-left: 2.4rem;
+}
+
+.required:after {
+    content: "*";
+    color: #be1e2d;
+}
+
+.contact-info,
+textarea {
+    min-width: 100%;
+    resize: vertical;
+}
+
+button {
+    padding: 0.6rem;
+    outline: 0;
+    border: 1px solid #32cd32;
+    color: #ffffff;
+    background-color: #32cd32;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    border-radius: 0.2rem;
+    width: 200px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    margin-bottom: 1.6rem;
+    margin-left: 50%;
+    -webkit-transform: translate(-100px, 0);
+    -moz-transform: translate(-100px, 0);
+    -ms-transform: translate(-100px, 0);
+    -o-transform: translate(-100px, 0);
+    transform: translate(-100px, 0);
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #32b532;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.quote {
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: center;
+    color: #be1e2d;
+    opacity: 0.8;
+    margin: 1rem 0;
+}
